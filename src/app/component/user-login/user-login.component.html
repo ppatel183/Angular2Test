@@ -1,0 +1,24 @@
+<section class="col-8">
+
+    <form #loginForm="ngForm" (ngSubmit)="verifyLogin()" class="col-12">
+        <div class="form-group" [class.has-error]="userId.invalid && userId.touched" [class.has-success]="userId.valid">
+            <label for="userID" class="control-label">User Id</label>
+            <input required type="text" name="userId" [(ngModel)]="userLogin.userId" class="form-control" id="userID" placeholder="User Id" pattern="^[A-Z][A-Za-z0-9]+" #userId="ngModel">
+            <span class="help-block"
+            *ngIf="userId.errors?.required && userId.touched">User Id is Required </span>
+            <span class="help-block"
+            *ngIf="userId.errors?.pattern && userId.touched">User Id is Invalid </span>
+        </div>
+        <div class="form-group" [class.has-error]="userId.invalid && userId.touched" [class.has-success]="userId.valid">
+            <label for="userPassword" class="control-label">Password</label>
+            <input required type="password" name="uPassword" [(ngModel)]="userLogin.uPassword" class="form-control" id="userPassword" placeholder="Password" pattern="^[A-Z][A-Za-z0-9#!@$&]+" #uPassword="ngModel">
+            <span class="help-block"
+            *ngIf="uPassword.errors?.required && uPassword.touched">Password is Required </span>
+            <span class="help-block"
+            *ngIf="uPassword.errors?.pattern && uPassword.touched">Password is Invalid </span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+{{loginForm.value | json}}

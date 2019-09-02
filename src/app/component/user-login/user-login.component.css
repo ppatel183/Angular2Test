@@ -1,0 +1,10 @@
+.form-group{
+    width: 400px;
+    margin-top: 20px;
+}
+#userID{
+    width: 300px;   
+}
+#userPassword{
+    width: 300px;   
+}

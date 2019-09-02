@@ -1,0 +1,24 @@
+#origId{
+    width: 200px;
+}
+#btnGenOrig{
+
+}
+#chkHasPresettle{
+   width: 25px;
+   height: 25px;
+}
+#lblPrestl{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+#currency{
+    padding-top: 15px;
+    padding-left: 5px;
+}
+#cadCurr{
+ margin-left: 10px;
+}
+#usCurr{
+    margin-left: 10px;
+}

@@ -1,0 +1,66 @@
+<form >
+    <form class="mt-2">
+        <div class="row justify-content-start">
+            <div class="col form-group">
+                <button type="submit" class="btn btn-primary" id="btnGenOrig">Request New Originator</button>
+            </div>
+            <div class="col form-group">
+                <input type="text" class="form-control" id="origId" 
+                    placeholder="Enter Originator Id" readonly>
+            </div>
+            <div class="col form-check form-group">
+                <input type="checkbox" class="form-check-input" name="chkPresettle" id="chkHasPresettle">
+                <label class="form-check-label" id="lblPrestl" for="chkPresettle">Has Presettle</label>
+              </div>
+              <div class="col form-group">
+                <input type="text" class="form-control" id="origId" 
+                    placeholder="Pre-Settle Originator Id" readonly>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col form-group">
+            <input type="text" class="form-control" id="origAccount" placeholder="Enter Originator Account">
+        </div>
+        <div class="col form-group">
+            <input type="text" class="form-control" id="origPreStlAccount" placeholder="Enter Originator Pre-Settle Account">
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="origSName" aria-describedby="origSNameHelp"
+            placeholder="Enter Originator Short Name">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="origFName" aria-describedby="origFNameHelp"
+            placeholder="Enter Originator Full Name">
+    </div>
+
+    <div class="row">
+        <div class="col form-group">
+            <input type="text" class="form-control" id="route" aria-describedby="routeHelp" placeholder="Enter Route">
+        </div>
+        <div class="col form-group">
+            <input type="text" class="form-control" id="transit" aria-describedby="transitHelp"
+                placeholder="Enter Transit">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" id="stlAccount" aria-describedby="settlementaccountHelp"
+            placeholder="Enter Settlement Account">
+    </div>
+    <div class="form-group" id="currency">
+        <label class="control-label">Currency</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cadCurr" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Canadian</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="usCurr" value="option2">
+            <label class="form-check-label" for="inlineRadio2">US</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
